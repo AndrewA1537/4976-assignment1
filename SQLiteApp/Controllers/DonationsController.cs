@@ -67,6 +67,12 @@ public class DonationsController : Controller
     {
         if (ModelState.IsValid)
         {
+            // Modified By
+            donations.Created = DateTime.Now;
+            donations.Modified = DateTime.Now;
+            donations.CreatedBy = User.Identity.Name;
+            donations.ModifiedBy = User.Identity.Name;
+
             _context.Add(donations);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -112,6 +118,10 @@ public class DonationsController : Controller
         {
             try
             {
+                // Modified By
+                donations.Modified = DateTime.Now;
+                donations.ModifiedBy = User.Identity.Name;
+
                 _context.Update(donations);
                 await _context.SaveChangesAsync();
             }

@@ -62,6 +62,12 @@ public class PaymentMethodController : Controller
     {
         if (ModelState.IsValid)
         {
+            // Modified By
+            paymentMethod.Created = DateTime.Now;
+            paymentMethod.Modified = DateTime.Now;
+            paymentMethod.CreatedBy = User.Identity.Name;
+            paymentMethod.ModifiedBy = User.Identity.Name;
+
             _context.Add(paymentMethod);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -101,6 +107,10 @@ public class PaymentMethodController : Controller
         {
             try
             {
+                // Modified By
+                paymentMethod.Modified = DateTime.Now;
+                paymentMethod.ModifiedBy = User.Identity.Name;
+
                 _context.Update(paymentMethod);
                 await _context.SaveChangesAsync();
             }

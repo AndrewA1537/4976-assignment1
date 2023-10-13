@@ -62,6 +62,12 @@ public class ContactListController : Controller
     {
         if (ModelState.IsValid)
         {
+            // Modified By
+            contactList.Created = DateTime.Now;
+            contactList.Modified = DateTime.Now;
+            contactList.CreatedBy = User.Identity.Name;
+            contactList.ModifiedBy = User.Identity.Name;
+            
             _context.Add(contactList);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -101,6 +107,10 @@ public class ContactListController : Controller
         {
             try
             {
+                // Modified By
+                contactList.Modified = DateTime.Now;
+                contactList.ModifiedBy = User.Identity.Name;
+                
                 _context.Update(contactList);
                 await _context.SaveChangesAsync();
             }

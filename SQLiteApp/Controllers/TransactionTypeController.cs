@@ -62,6 +62,12 @@ public class TransactionTypeController : Controller
     {
         if (ModelState.IsValid)
         {
+            // Modified By
+            transactionType.Created = DateTime.Now;
+            transactionType.Modified = DateTime.Now;
+            transactionType.CreatedBy = User.Identity.Name;
+            transactionType.ModifiedBy = User.Identity.Name;
+
             _context.Add(transactionType);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -101,6 +107,10 @@ public class TransactionTypeController : Controller
         {
             try
             {
+                // Modified By
+                transactionType.Modified = DateTime.Now;
+                transactionType.ModifiedBy = User.Identity.Name;
+
                 _context.Update(transactionType);
                 await _context.SaveChangesAsync();
             }
