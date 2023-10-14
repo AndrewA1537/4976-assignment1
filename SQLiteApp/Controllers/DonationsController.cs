@@ -1,13 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using SQLiteApp.Data;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using NonProfitLibrary;
+using SQLiteApp.Data;
+using System.Linq;
+using System;
 
 namespace SQLiteApp.Controllers;
 
@@ -24,7 +24,7 @@ public class DonationsController : Controller
     // GET: Donations
     public async Task<IActionResult> Index()
     {
-        var applicationDbContext = _context.Donations!.Include(d => d.Account).Include(d => d.PaymentMethod).Include(d => d.TransactionType);
+        var applicationDbContext = _context.Donations.Include(d => d.Account).Include(d => d.PaymentMethod).Include(d => d.TransactionType);
         return View(await applicationDbContext.ToListAsync());
     }
 
@@ -52,9 +52,9 @@ public class DonationsController : Controller
     // GET: Donations/Create
     public IActionResult Create()
     {
-        ViewData["AccountNo"] = new SelectList(_context.ContactLists, "AccountNo", "Email");
-        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "Name");
-        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionTypes, "TransactionTypeId", "Name");
+        ViewData["AccountNo"] = new SelectList(_context.ContactList, "AccountNo", "Email");
+        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethod, "PaymentMethodId", "Name");
+        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionType, "TransactionTypeId", "Name");
         return View();
     }
 
@@ -77,9 +77,9 @@ public class DonationsController : Controller
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        ViewData["AccountNo"] = new SelectList(_context.ContactLists, "AccountNo", "Email", donations.AccountNo);
-        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "Name", donations.PaymentMethodId);
-        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionTypes, "TransactionTypeId", "Name", donations.TransactionTypeId);
+        ViewData["AccountNo"] = new SelectList(_context.ContactList, "AccountNo", "Email", donations.AccountNo);
+        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethod, "PaymentMethodId", "Name", donations.PaymentMethodId);
+        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionType, "TransactionTypeId", "Name", donations.TransactionTypeId);
         return View(donations);
     }
 
@@ -96,9 +96,9 @@ public class DonationsController : Controller
         {
             return NotFound();
         }
-        ViewData["AccountNo"] = new SelectList(_context.ContactLists, "AccountNo", "Email", donations.AccountNo);
-        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "Name", donations.PaymentMethodId);
-        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionTypes, "TransactionTypeId", "Name", donations.TransactionTypeId);
+        ViewData["AccountNo"] = new SelectList(_context.ContactList, "AccountNo", "Email", donations.AccountNo);
+        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethod, "PaymentMethodId", "Name", donations.PaymentMethodId);
+        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionType, "TransactionTypeId", "Name", donations.TransactionTypeId);
         return View(donations);
     }
 
@@ -121,7 +121,7 @@ public class DonationsController : Controller
                 // Modified By
                 donations.Modified = DateTime.Now;
                 donations.ModifiedBy = User.Identity.Name;
-
+                
                 _context.Update(donations);
                 await _context.SaveChangesAsync();
             }
@@ -138,9 +138,9 @@ public class DonationsController : Controller
             }
             return RedirectToAction(nameof(Index));
         }
-        ViewData["AccountNo"] = new SelectList(_context.ContactLists, "AccountNo", "Email", donations.AccountNo);
-        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "Name", donations.PaymentMethodId);
-        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionTypes, "TransactionTypeId", "Name", donations.TransactionTypeId);
+        ViewData["AccountNo"] = new SelectList(_context.ContactList, "AccountNo", "Email", donations.AccountNo);
+        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethod, "PaymentMethodId", "Name", donations.PaymentMethodId);
+        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionType, "TransactionTypeId", "Name", donations.TransactionTypeId);
         return View(donations);
     }
 
@@ -189,4 +189,3 @@ public class DonationsController : Controller
         return (_context.Donations?.Any(e => e.TransId == id)).GetValueOrDefault();
     }
 }
-

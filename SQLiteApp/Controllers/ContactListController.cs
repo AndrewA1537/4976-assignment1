@@ -1,13 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using SQLiteApp.Data;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using NonProfitLibrary;
+using SQLiteApp.Data;
+using System.Linq;
+using System;
 
 namespace SQLiteApp.Controllers;
 
@@ -24,20 +24,20 @@ public class ContactListController : Controller
     // GET: ContactList
     public async Task<IActionResult> Index()
     {
-        return _context.ContactLists != null ?
-                    View(await _context.ContactLists.ToListAsync()) :
-                    Problem("Entity set 'ApplicationDbContext.ContactLists'  is null.");
+        return _context.ContactList != null ?
+                    View(await _context.ContactList.ToListAsync()) :
+                    Problem("Entity set 'ApplicationDbContext.ContactList'  is null.");
     }
 
     // GET: ContactList/Details/5
     public async Task<IActionResult> Details(int? id)
     {
-        if (id == null || _context.ContactLists == null)
+        if (id == null || _context.ContactList == null)
         {
             return NotFound();
         }
 
-        var contactList = await _context.ContactLists
+        var contactList = await _context.ContactList
             .FirstOrDefaultAsync(m => m.AccountNo == id);
         if (contactList == null)
         {
@@ -62,12 +62,6 @@ public class ContactListController : Controller
     {
         if (ModelState.IsValid)
         {
-            // Modified By
-            contactList.Created = DateTime.Now;
-            contactList.Modified = DateTime.Now;
-            contactList.CreatedBy = User.Identity.Name;
-            contactList.ModifiedBy = User.Identity.Name;
-            
             _context.Add(contactList);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -78,12 +72,12 @@ public class ContactListController : Controller
     // GET: ContactList/Edit/5
     public async Task<IActionResult> Edit(int? id)
     {
-        if (id == null || _context.ContactLists == null)
+        if (id == null || _context.ContactList == null)
         {
             return NotFound();
         }
 
-        var contactList = await _context.ContactLists.FindAsync(id);
+        var contactList = await _context.ContactList.FindAsync(id);
         if (contactList == null)
         {
             return NotFound();
@@ -107,10 +101,6 @@ public class ContactListController : Controller
         {
             try
             {
-                // Modified By
-                contactList.Modified = DateTime.Now;
-                contactList.ModifiedBy = User.Identity.Name;
-                
                 _context.Update(contactList);
                 await _context.SaveChangesAsync();
             }
@@ -133,12 +123,12 @@ public class ContactListController : Controller
     // GET: ContactList/Delete/5
     public async Task<IActionResult> Delete(int? id)
     {
-        if (id == null || _context.ContactLists == null)
+        if (id == null || _context.ContactList == null)
         {
             return NotFound();
         }
 
-        var contactList = await _context.ContactLists
+        var contactList = await _context.ContactList
             .FirstOrDefaultAsync(m => m.AccountNo == id);
         if (contactList == null)
         {
@@ -153,14 +143,14 @@ public class ContactListController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        if (_context.ContactLists == null)
+        if (_context.ContactList == null)
         {
-            return Problem("Entity set 'ApplicationDbContext.ContactLists'  is null.");
+            return Problem("Entity set 'ApplicationDbContext.ContactList'  is null.");
         }
-        var contactList = await _context.ContactLists.FindAsync(id);
+        var contactList = await _context.ContactList.FindAsync(id);
         if (contactList != null)
         {
-            _context.ContactLists.Remove(contactList);
+            _context.ContactList.Remove(contactList);
         }
 
         await _context.SaveChangesAsync();
@@ -169,6 +159,6 @@ public class ContactListController : Controller
 
     private bool ContactListExists(int id)
     {
-        return (_context.ContactLists?.Any(e => e.AccountNo == id)).GetValueOrDefault();
+        return (_context.ContactList?.Any(e => e.AccountNo == id)).GetValueOrDefault();
     }
 }

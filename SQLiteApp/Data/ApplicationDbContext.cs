@@ -8,23 +8,23 @@ public class ApplicationDbContext : IdentityDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
-    {
-
+    { 
+        
     }
 
-    public DbSet<ContactList>? ContactLists { get; set; } = default!;
-    public DbSet<TransactionType>? TransactionTypes { get; set; } = default!;
-    public DbSet<PaymentMethod>? PaymentMethods { get; set; } = default!;
-    public DbSet<Donations>? Donations { get; set; } = default!;
+    public DbSet<NonProfitLibrary.ContactList> ContactList { get; set; } = default!;
+    public DbSet<NonProfitLibrary.TransactionType> TransactionType { get; set; } = default!;
+    public DbSet<NonProfitLibrary.PaymentMethod> PaymentMethod { get; set; } = default!;
+    public DbSet<NonProfitLibrary.Donations> Donations { get; set; } = default!;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
 
         builder.Entity<ContactList>().ToTable("ContactList");
-        builder.Entity<TransactionType>().ToTable("TransactionType");
-        builder.Entity<PaymentMethod>().ToTable("PaymentMethod");
         builder.Entity<Donations>().ToTable("Donations");
+        builder.Entity<PaymentMethod>().ToTable("PaymentMethod");
+        builder.Entity<TransactionType>().ToTable("TransactionType");
 
         // seed the database
         SeedData.Seed(builder);

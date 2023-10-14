@@ -1,13 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using SQLiteApp.Data;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using NonProfitLibrary;
+using SQLiteApp.Data;
+using System.Linq;
+using System;
 
 namespace SQLiteApp.Controllers;
 
@@ -24,20 +24,20 @@ public class TransactionTypeController : Controller
     // GET: TransactionType
     public async Task<IActionResult> Index()
     {
-        return _context.TransactionTypes != null ?
-                    View(await _context.TransactionTypes.ToListAsync()) :
-                    Problem("Entity set 'ApplicationDbContext.TransactionTypes'  is null.");
+        return _context.TransactionType != null ?
+                    View(await _context.TransactionType.ToListAsync()) :
+                    Problem("Entity set 'ApplicationDbContext.TransactionType'  is null.");
     }
 
     // GET: TransactionType/Details/5
     public async Task<IActionResult> Details(int? id)
     {
-        if (id == null || _context.TransactionTypes == null)
+        if (id == null || _context.TransactionType == null)
         {
             return NotFound();
         }
 
-        var transactionType = await _context.TransactionTypes
+        var transactionType = await _context.TransactionType
             .FirstOrDefaultAsync(m => m.TransactionTypeId == id);
         if (transactionType == null)
         {
@@ -62,12 +62,6 @@ public class TransactionTypeController : Controller
     {
         if (ModelState.IsValid)
         {
-            // Modified By
-            transactionType.Created = DateTime.Now;
-            transactionType.Modified = DateTime.Now;
-            transactionType.CreatedBy = User.Identity.Name;
-            transactionType.ModifiedBy = User.Identity.Name;
-
             _context.Add(transactionType);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -78,12 +72,12 @@ public class TransactionTypeController : Controller
     // GET: TransactionType/Edit/5
     public async Task<IActionResult> Edit(int? id)
     {
-        if (id == null || _context.TransactionTypes == null)
+        if (id == null || _context.TransactionType == null)
         {
             return NotFound();
         }
 
-        var transactionType = await _context.TransactionTypes.FindAsync(id);
+        var transactionType = await _context.TransactionType.FindAsync(id);
         if (transactionType == null)
         {
             return NotFound();
@@ -107,10 +101,6 @@ public class TransactionTypeController : Controller
         {
             try
             {
-                // Modified By
-                transactionType.Modified = DateTime.Now;
-                transactionType.ModifiedBy = User.Identity.Name;
-
                 _context.Update(transactionType);
                 await _context.SaveChangesAsync();
             }
@@ -133,12 +123,12 @@ public class TransactionTypeController : Controller
     // GET: TransactionType/Delete/5
     public async Task<IActionResult> Delete(int? id)
     {
-        if (id == null || _context.TransactionTypes == null)
+        if (id == null || _context.TransactionType == null)
         {
             return NotFound();
         }
 
-        var transactionType = await _context.TransactionTypes
+        var transactionType = await _context.TransactionType
             .FirstOrDefaultAsync(m => m.TransactionTypeId == id);
         if (transactionType == null)
         {
@@ -153,14 +143,14 @@ public class TransactionTypeController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
-        if (_context.TransactionTypes == null)
+        if (_context.TransactionType == null)
         {
-            return Problem("Entity set 'ApplicationDbContext.TransactionTypes'  is null.");
+            return Problem("Entity set 'ApplicationDbContext.TransactionType'  is null.");
         }
-        var transactionType = await _context.TransactionTypes.FindAsync(id);
+        var transactionType = await _context.TransactionType.FindAsync(id);
         if (transactionType != null)
         {
-            _context.TransactionTypes.Remove(transactionType);
+            _context.TransactionType.Remove(transactionType);
         }
 
         await _context.SaveChangesAsync();
@@ -169,6 +159,6 @@ public class TransactionTypeController : Controller
 
     private bool TransactionTypeExists(int id)
     {
-        return (_context.TransactionTypes?.Any(e => e.TransactionTypeId == id)).GetValueOrDefault();
+        return (_context.TransactionType?.Any(e => e.TransactionTypeId == id)).GetValueOrDefault();
     }
 }

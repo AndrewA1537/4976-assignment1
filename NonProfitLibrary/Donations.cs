@@ -28,13 +28,16 @@ public class Donations
     public DateTime Created { get; set; } = DateTime.Now;
 
     // [ScaffoldColumn(false)]
+    [Display(Name = "Last Modified")]
     public DateTime Modified { get; set; } = DateTime.Now;
 
-    // [ScaffoldColumn(false)]
-    public required string CreatedBy { get; set; }
+    // REMOVE THE REQUIRED IF YOU WANT CONTROLLER TO WORK
 
     // [ScaffoldColumn(false)]
-    public required string ModifiedBy { get; set; }
+    public string CreatedBy { get; set; }
+
+    // [ScaffoldColumn(false)]
+    public string ModifiedBy { get; set; }
 
     // Navigation properties
     [ForeignKey("AccountNo")]
