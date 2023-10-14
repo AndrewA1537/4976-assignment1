@@ -387,3 +387,114 @@ Brief description of your project.
         }
     </ul>
     ```
+
+17. **Note: To fix this error make sure the BIND methods in Donations are properly set**:
+
+    ```bash
+    public IActionResult Create()
+    {
+        ViewData["AccountNo"] = new SelectList(_context.ContactLists, "AccountNo", "Email");
+        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "Name");
+        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionTypes, "TransactionTypeId", "Name");
+        return View();
+    }
+
+
+    public async Task<IActionResult> Create([Bind("TransId,Date,AccountNo,TransactionTypeId,Amount,PaymentMethodId,Notes,Created,Modified,CreatedBy,ModifiedBy")] Donations donations)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Add(donations);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        ViewData["AccountNo"] = new SelectList(_context.ContactLists, "AccountNo", "Email", donations.AccountNo);
+        ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "Name", donations.PaymentMethodId);
+        ViewData["TransactionTypeId"] = new SelectList(_context.TransactionTypes, "TransactionTypeId", "Name", donations.TransactionTypeId);
+        return View(donations);
+    }
+    ```
+
+18. **Now we can make a class library by using these commands**:
+
+    ```bash
+    dotnet new classlib -o NonProfitLibrary
+
+    dotnet new sln
+
+    dotnet sln add NonProfitLibrary/NonProfitLibrary.csproj
+
+    dotnet build
+
+    "In vscode make sure to add the library to the app as a project reference in the SOLUTION EXPLORER"
+
+    next is add packages
+
+    update all namespaces
+
+    run migrations
+
+    update database
+    ```
+
+19. **Add this to the controllers to get them working properly**:
+
+    ```bash
+    public async Task<IActionResult> Create([Bind("AccountNo,FirstName,LastName,Email,Street,City,PostalCode,Country")] ContactList contactList)
+    {
+        if (ModelState.IsValid)
+        {
+            // Modified By
+            contactList.Created = DateTime.Now;
+            contactList.Modified = DateTime.Now;
+            contactList.CreatedBy = User.Identity.Name;
+            contactList.ModifiedBy = User.Identity.Name;
+
+            _context.Add(contactList);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        return View(contactList);
+    }
+
+
+    public async Task<IActionResult> Edit(int id, [Bind("AccountNo,FirstName,LastName,Email,Street,City,PostalCode,Country")] ContactList contactList)
+    {
+        if (id != contactList.AccountNo)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                // Modified By
+                contactList.Modified = DateTime.Now;
+                contactList.ModifiedBy = User.Identity.Name;
+
+                _context.Update(contactList);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ContactListExists(contactList.AccountNo))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        return View(contactList);
+    }
+    ```
+
+20. **...**:
+
+    ```bash
+   
+    ```
