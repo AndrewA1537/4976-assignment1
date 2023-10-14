@@ -493,8 +493,14 @@ Brief description of your project.
     }
     ```
 
-20. **...**:
+20. **DO NOT USE!! Now lets surface some hidden pages from .NET by using the following command so we can style them: NOTE for some reason this breaks the app so don't use it for now**:
 
     ```bash
-   
+    dotnet aspnet-codegenerator identity --files "Account.Register;Account.Login;Account.RegisterConfirmation" -dc ApplicationDbContext
+    ```
+
+21. **...**:
+
+    ```bash
+    
     ```

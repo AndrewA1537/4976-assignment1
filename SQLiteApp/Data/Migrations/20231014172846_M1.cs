@@ -261,8 +261,8 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "9e5aea5c-04df-4e8b-8fed-69b52629f769", null, "Finance", "FINANCE" },
-                    { "d93fc02d-a78b-42bc-9214-133d5a092ffa", null, "Admin", "ADMIN" }
+                    { "01255733-db3c-4c6e-a3bb-366f629342c2", null, "Admin", "ADMIN" },
+                    { "bf64e8dd-6f70-4c5e-a4b5-bb0687bc5246", null, "Finance", "FINANCE" }
                 });
 
             migrationBuilder.InsertData(
@@ -270,8 +270,8 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "27f05d62-c9ea-4873-ab23-93a65e2b2583", 0, "a3fed392-bf90-416e-87d2-422b93a8f1ca", "a@a.a", true, false, null, "A@A.A", "A@A.A", "AQAAAAIAAYagAAAAEHgUob7IuOyRu79W3QJkT1fIvPrSiWxovSydq83XKYbPSVZQfQbMXtjcvpKv2Ij5fw==", null, false, "41b5e593-3bc3-4a60-a70c-e6d89fd9aaa6", false, "a@a.a" },
-                    { "343561a7-00ba-479d-a1fe-59aa84bd8694", 0, "c3426d75-ccee-4326-a511-e91b64d548ad", "f@f.f", true, false, null, "F@F.F", "F@F.F", "AQAAAAIAAYagAAAAEAjljkS3/vLeU5kCQpcX80lDMx3Y5Zm3rC3moQtpVNkXLyxjGOHZtrxd7RGOsr3Pbg==", null, false, "74962f19-3e9d-47e3-9e4e-f44acdbcfd5d", false, "f@f.f" }
+                    { "6344b9d2-67d1-429d-bba4-89f5fd0d2802", 0, "70a5cc54-0727-41c4-ad7d-4166270b1c0e", "a@a.a", true, false, null, "A@A.A", "A@A.A", "AQAAAAIAAYagAAAAEF/R6BMMz5UHJA71CLIWoqAHvK+AA8TxZqPn2yqxbCaiwBaMOC20nURqCq5xDsJGcA==", null, false, "b1f3a063-0cf0-4dcf-a391-8f62993d7a45", false, "a@a.a" },
+                    { "6422728d-a0cf-4660-a7fa-9d1bf52eacbb", 0, "85da2a81-3c66-47c5-a831-e4c5bacd00e4", "f@f.f", true, false, null, "F@F.F", "F@F.F", "AQAAAAIAAYagAAAAEFSY8dt2PyWmjMY5VGCVXpZHz91n3WUJGqJ8bvvB5B6bmoT8d2x69O6rKbQHsZBeQw==", null, false, "cdfc84ef-f8a3-47b7-a8d4-5789c4b5eeb6", false, "f@f.f" }
                 });
 
             migrationBuilder.InsertData(
@@ -279,9 +279,9 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "AccountNo", "City", "Country", "Created", "CreatedBy", "Email", "FirstName", "LastName", "Modified", "ModifiedBy", "PostalCode", "Street" },
                 values: new object[,]
                 {
-                    { 1, "Anytown", "USA", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(107), "System", "john@email.com", "John", "Doe", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(111), "System", "12345", "123 Main St" },
-                    { 2, "Anytown", "USA", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(129), "System", "jane@email.com", "Jane", "Doe", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(133), "System", "12345", "123 Main St" },
-                    { 3, "Anytown", "CAN", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(144), "System", "Bob@email.com", "Bob", "Smith", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(148), "System", "12345", "123 Main St" }
+                    { 1, "Anytown", "USA", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5804), "System", "john@email.com", "John", "Doe", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5808), "System", "12345", "123 Main St" },
+                    { 2, "Anytown", "USA", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5823), "System", "jane@email.com", "Jane", "Doe", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5826), "System", "12345", "123 Main St" },
+                    { 3, "Anytown", "CAN", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5837), "System", "Bob@email.com", "Bob", "Smith", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5840), "System", "12345", "123 Main St" }
                 });
 
             migrationBuilder.InsertData(
@@ -289,9 +289,9 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "PaymentMethodId", "Created", "CreatedBy", "Modified", "ModifiedBy", "Name" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(309), "System", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(314), "System", "Cash" },
-                    { 2, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(330), "System", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(333), "System", "Check" },
-                    { 3, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(342), "System", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(345), "System", "Credit Card" }
+                    { 1, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6056), "System", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6061), "System", "Cash" },
+                    { 2, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6074), "System", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6076), "System", "Check" },
+                    { 3, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6087), "System", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6090), "System", "Credit Card" }
                 });
 
             migrationBuilder.InsertData(
@@ -299,9 +299,9 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "TransactionTypeId", "Created", "CreatedBy", "Description", "Modified", "ModifiedBy", "Name" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(223), "System", "Donation", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(226), "System", "Donation" },
-                    { 2, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(240), "System", "Membership", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(243), "System", "Membership" },
-                    { 3, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(253), "System", "Event", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(256), "System", "Event" }
+                    { 1, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5906), "System", "Donation", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5909), "System", "Donation" },
+                    { 2, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5921), "System", "Membership", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5924), "System", "Membership" },
+                    { 3, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5934), "System", "Event", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(5937), "System", "Event" }
                 });
 
             migrationBuilder.InsertData(
@@ -309,8 +309,8 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "d93fc02d-a78b-42bc-9214-133d5a092ffa", "27f05d62-c9ea-4873-ab23-93a65e2b2583" },
-                    { "9e5aea5c-04df-4e8b-8fed-69b52629f769", "343561a7-00ba-479d-a1fe-59aa84bd8694" }
+                    { "01255733-db3c-4c6e-a3bb-366f629342c2", "6344b9d2-67d1-429d-bba4-89f5fd0d2802" },
+                    { "bf64e8dd-6f70-4c5e-a4b5-bb0687bc5246", "6422728d-a0cf-4660-a7fa-9d1bf52eacbb" }
                 });
 
             migrationBuilder.InsertData(
@@ -318,9 +318,9 @@ namespace SQLiteApp.Data.Migrations
                 columns: new[] { "TransId", "AccountNo", "Amount", "Created", "CreatedBy", "Date", "Modified", "ModifiedBy", "Notes", "PaymentMethodId", "TransactionTypeId" },
                 values: new object[,]
                 {
-                    { 1, 1, 100f, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(398), "System", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(391), new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(401), "System", "Donation", 1, 1 },
-                    { 2, 2, 200f, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(419), "System", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(415), new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(422), "System", "Event", 2, 2 },
-                    { 3, 3, 300f, new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(435), "System", new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(431), new DateTime(2023, 10, 12, 19, 3, 22, 540, DateTimeKind.Local).AddTicks(438), "System", "Membership", 3, 3 }
+                    { 1, 1, 100f, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6144), "System", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6137), new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6147), "System", "Donation", 1, 1 },
+                    { 2, 2, 200f, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6166), "System", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6162), new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6169), "System", "Event", 2, 2 },
+                    { 3, 3, 300f, new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6183), "System", new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6179), new DateTime(2023, 10, 14, 10, 28, 45, 982, DateTimeKind.Local).AddTicks(6186), "System", "Membership", 3, 3 }
                 });
 
             migrationBuilder.CreateIndex(
