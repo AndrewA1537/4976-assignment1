@@ -1,0 +1,52 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-aiiz8n7pjx] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a[b-aiiz8n7pjx] {
+    color: #0077cc;
+}
+
+.btn-primary[b-aiiz8n7pjx] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-aiiz8n7pjx],
+.nav-pills .show > .nav-link[b-aiiz8n7pjx] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-aiiz8n7pjx] {
+    border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-aiiz8n7pjx] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-aiiz8n7pjx] {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy[b-aiiz8n7pjx] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-aiiz8n7pjx] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+    text-align: center;
+}

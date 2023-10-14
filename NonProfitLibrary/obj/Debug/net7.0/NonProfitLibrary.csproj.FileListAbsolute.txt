@@ -1,0 +1,11 @@
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\bin\Debug\net7.0\NonProfitLibrary.deps.json
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\bin\Debug\net7.0\NonProfitLibrary.dll
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\bin\Debug\net7.0\NonProfitLibrary.pdb
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\NonProfitLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\NonProfitLibrary.AssemblyInfoInputs.cache
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\NonProfitLibrary.AssemblyInfo.cs
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\NonProfitLibrary.csproj.CoreCompileInputs.cache
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\NonProfitLibrary.dll
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\refint\NonProfitLibrary.dll
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\NonProfitLibrary.pdb
+D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\NonProfitLibrary\obj\Debug\net7.0\ref\NonProfitLibrary.dll
