@@ -65,8 +65,15 @@ public class DonationsController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("TransId,Date,AccountNo,TransactionTypeId,Amount,PaymentMethodId,Notes,Created,Modified,CreatedBy,ModifiedBy")] Donations donations)
     {
+        ModelState.Remove("CreatedBy");
+        ModelState.Remove("ModifiedBy");    
+        ModelState.Remove("Created");
+        ModelState.Remove("Modified");
+        ModelState.Remove("Notes");
+        
         if (ModelState.IsValid)
         {
+            Console.WriteLine("DonationsController.Create: ModelState.IsValid");
             // Modified By
             donations.Created = DateTime.Now;
             donations.Modified = DateTime.Now;
@@ -121,7 +128,7 @@ public class DonationsController : Controller
                 // Modified By
                 donations.Modified = DateTime.Now;
                 donations.ModifiedBy = User.Identity.Name;
-                
+
                 _context.Update(donations);
                 await _context.SaveChangesAsync();
             }
