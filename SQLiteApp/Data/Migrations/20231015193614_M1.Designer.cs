@@ -11,7 +11,7 @@ using SQLiteApp.Data;
 namespace SQLiteApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231014204439_M1")]
+    [Migration("20231015193614_M1")]
     partial class M1
     {
         /// <inheritdoc />
@@ -48,13 +48,13 @@ namespace SQLiteApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "804e1d18-0942-49e2-a986-e7a7ff22157f",
+                            Id = "b0849503-fe76-411b-b63e-e81de24b3c15",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "2693d998-3c71-472e-9ff4-7c98efd981da",
+                            Id = "70a651bc-6235-4159-bee4-d1877edd7e97",
                             Name = "Finance",
                             NormalizedName = "FINANCE"
                         });
@@ -149,33 +149,33 @@ namespace SQLiteApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "04e22f6d-4b0a-4067-90e9-8abb30f832e9",
+                            Id = "a1a4a6a4-9308-4477-812d-cd5e297b9a58",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "66ae0b36-1853-4cf2-b2a2-a4c8dd6f57b8",
+                            ConcurrencyStamp = "408f0b70-a8ff-4742-99f7-80a6e2239c73",
                             Email = "a@a.a",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "A@A.A",
                             NormalizedUserName = "A@A.A",
-                            PasswordHash = "AQAAAAIAAYagAAAAED5d5/IIWdA587DeoWT3ogfUWp9L4FDHN4o4ylQw8poZvpwmT2j5zuNJQKRZ0hrhuQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGcGTs52r1AN3o+TRcs8F6iq2IMkeBURa/GsmrTYibD4NphFGvM7Xc5+8oattPzBag==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f501374e-3531-4a1d-9b8d-4dab8b37eb16",
+                            SecurityStamp = "fd56d293-a1f4-4bcb-a846-3fa7566abf3c",
                             TwoFactorEnabled = false,
                             UserName = "a@a.a"
                         },
                         new
                         {
-                            Id = "6e7efd5b-86e9-4e28-bf23-6fa886563eec",
+                            Id = "ff88edb6-6cd8-4dc1-952e-b4183e2a04e0",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "16cb4db0-75e5-4cac-8c0b-0e5c1ead9359",
+                            ConcurrencyStamp = "98ebf3c1-2851-42bb-9e10-0e8f32366e24",
                             Email = "f@f.f",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "F@F.F",
                             NormalizedUserName = "F@F.F",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMMqo5rF0aEvCVEGdhwk9wrCoNv88/Nz+YISzavRsh7zqpwYInIgo3rcK6BUWol+aA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFRMD0dAMJbmumDyQ2eC3wrEu7H6kdi1rnXOEItHex503p/xo/LvIWO7IfdNuPcQ9A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a27cf03f-839e-46b7-a698-6e662543de0a",
+                            SecurityStamp = "8a038d5d-1d81-4674-a21b-4d4edb3b8bb0",
                             TwoFactorEnabled = false,
                             UserName = "f@f.f"
                         });
@@ -245,13 +245,13 @@ namespace SQLiteApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "04e22f6d-4b0a-4067-90e9-8abb30f832e9",
-                            RoleId = "804e1d18-0942-49e2-a986-e7a7ff22157f"
+                            UserId = "a1a4a6a4-9308-4477-812d-cd5e297b9a58",
+                            RoleId = "b0849503-fe76-411b-b63e-e81de24b3c15"
                         },
                         new
                         {
-                            UserId = "6e7efd5b-86e9-4e28-bf23-6fa886563eec",
-                            RoleId = "2693d998-3c71-472e-9ff4-7c98efd981da"
+                            UserId = "ff88edb6-6cd8-4dc1-952e-b4183e2a04e0",
+                            RoleId = "70a651bc-6235-4159-bee4-d1877edd7e97"
                         });
                 });
 
@@ -334,12 +334,12 @@ namespace SQLiteApp.Data.Migrations
                             AccountNo = 1,
                             City = "Anytown",
                             Country = "USA",
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7806),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9279),
                             CreatedBy = "System",
                             Email = "john@email.com",
                             FirstName = "John",
                             LastName = "Doe",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7808),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9283),
                             ModifiedBy = "System",
                             PostalCode = "12345",
                             Street = "123 Main St"
@@ -349,12 +349,12 @@ namespace SQLiteApp.Data.Migrations
                             AccountNo = 2,
                             City = "Anytown",
                             Country = "USA",
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7816),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9299),
                             CreatedBy = "System",
                             Email = "jane@email.com",
                             FirstName = "Jane",
                             LastName = "Doe",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7817),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9301),
                             ModifiedBy = "System",
                             PostalCode = "12345",
                             Street = "123 Main St"
@@ -364,12 +364,12 @@ namespace SQLiteApp.Data.Migrations
                             AccountNo = 3,
                             City = "Anytown",
                             Country = "CAN",
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7822),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9313),
                             CreatedBy = "System",
                             Email = "Bob@email.com",
                             FirstName = "Bob",
                             LastName = "Smith",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7824),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9315),
                             ModifiedBy = "System",
                             PostalCode = "12345",
                             Street = "123 Main St"
@@ -427,13 +427,55 @@ namespace SQLiteApp.Data.Migrations
                     b.HasData(
                         new
                         {
+                            TransId = 4,
+                            AccountNo = 1,
+                            Amount = 1100f,
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9549),
+                            CreatedBy = "System",
+                            Date = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9541),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9552),
+                            ModifiedBy = "System",
+                            Notes = "Donation",
+                            PaymentMethodId = 1,
+                            TransactionTypeId = 1
+                        },
+                        new
+                        {
+                            TransId = 5,
+                            AccountNo = 2,
+                            Amount = 1200f,
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9567),
+                            CreatedBy = "System",
+                            Date = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9563),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9570),
+                            ModifiedBy = "System",
+                            Notes = "Event",
+                            PaymentMethodId = 2,
+                            TransactionTypeId = 2
+                        },
+                        new
+                        {
+                            TransId = 6,
+                            AccountNo = 3,
+                            Amount = 1300f,
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9584),
+                            CreatedBy = "System",
+                            Date = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9579),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9586),
+                            ModifiedBy = "System",
+                            Notes = "Membership",
+                            PaymentMethodId = 3,
+                            TransactionTypeId = 3
+                        },
+                        new
+                        {
                             TransId = 1,
                             AccountNo = 1,
                             Amount = 100f,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7936),
+                            Created = new DateTime(2022, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CreatedBy = "System",
-                            Date = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7931),
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7937),
+                            Date = new DateTime(2022, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Modified = new DateTime(2022, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ModifiedBy = "System",
                             Notes = "Donation",
                             PaymentMethodId = 1,
@@ -444,10 +486,10 @@ namespace SQLiteApp.Data.Migrations
                             TransId = 2,
                             AccountNo = 2,
                             Amount = 200f,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7945),
+                            Created = new DateTime(2022, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CreatedBy = "System",
-                            Date = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7943),
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7946),
+                            Date = new DateTime(2022, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Modified = new DateTime(2022, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ModifiedBy = "System",
                             Notes = "Event",
                             PaymentMethodId = 2,
@@ -458,10 +500,10 @@ namespace SQLiteApp.Data.Migrations
                             TransId = 3,
                             AccountNo = 3,
                             Amount = 300f,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7952),
+                            Created = new DateTime(2022, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CreatedBy = "System",
-                            Date = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7950),
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7953),
+                            Date = new DateTime(2022, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Modified = new DateTime(2022, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ModifiedBy = "System",
                             Notes = "Membership",
                             PaymentMethodId = 3,
@@ -500,27 +542,27 @@ namespace SQLiteApp.Data.Migrations
                         new
                         {
                             PaymentMethodId = 1,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7894),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9466),
                             CreatedBy = "System",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7897),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9470),
                             ModifiedBy = "System",
                             Name = "Cash"
                         },
                         new
                         {
                             PaymentMethodId = 2,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7904),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9483),
                             CreatedBy = "System",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7905),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9486),
                             ModifiedBy = "System",
                             Name = "Check"
                         },
                         new
                         {
                             PaymentMethodId = 3,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7909),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9496),
                             CreatedBy = "System",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7911),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9499),
                             ModifiedBy = "System",
                             Name = "Credit Card"
                         });
@@ -561,30 +603,30 @@ namespace SQLiteApp.Data.Migrations
                         new
                         {
                             TransactionTypeId = 1,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7857),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9388),
                             CreatedBy = "System",
                             Description = "Donation",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7858),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9392),
                             ModifiedBy = "System",
                             Name = "Donation"
                         },
                         new
                         {
                             TransactionTypeId = 2,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7863),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9403),
                             CreatedBy = "System",
                             Description = "Membership",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7865),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9406),
                             ModifiedBy = "System",
                             Name = "Membership"
                         },
                         new
                         {
                             TransactionTypeId = 3,
-                            Created = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7869),
+                            Created = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9416),
                             CreatedBy = "System",
                             Description = "Event",
-                            Modified = new DateTime(2023, 10, 14, 13, 44, 39, 113, DateTimeKind.Local).AddTicks(7870),
+                            Modified = new DateTime(2023, 10, 15, 12, 36, 13, 518, DateTimeKind.Local).AddTicks(9419),
                             ModifiedBy = "System",
                             Name = "Event"
                         });

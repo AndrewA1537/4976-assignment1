@@ -1,5 +1,6 @@
 @{
     ViewData["Title"] = "Year to Date Report";
+    DateTime startOfYear = new DateTime(DateTime.Now.Year, 1, 1);
 }
 
 <h1>Year to date</h1>
@@ -9,8 +10,7 @@
     <h4 class="m-4">Donations made to Zenith Non-proft</h4>
 
     <div class="m-2 p-2">
-        <p>Date : 31 December, 2023 until @DateTime.Now.ToString("MMMM dd, yyyy")</p>
-
+        <p>Date: @startOfYear.ToString("MMMM dd, yyyy") until @DateTime.Now.ToString("MMMM dd, yyyy")</p>
 
         <table class="table">
             <thead>

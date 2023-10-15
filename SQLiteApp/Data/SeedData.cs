@@ -156,13 +156,14 @@ public static class SeedData
     {
         List<Donations> donations = new List<Donations>()
         {
+            // CURRENT DATE TIME SEED DATA
             new Donations()
             {
-                TransId           = 1,
+                TransId           = 4,
                 Date              = DateTime.Now,
                 AccountNo         = 1,
                 TransactionTypeId = 1,
-                Amount            = 100,
+                Amount            = 1100,
                 PaymentMethodId   = 1,
                 Notes             = "Donation",
                 Created           = DateTime.Now,
@@ -172,11 +173,11 @@ public static class SeedData
                 },
             new Donations()
             {
-                TransId           = 2,
+                TransId           = 5,
                 Date              = DateTime.Now,
                 AccountNo         = 2,
                 TransactionTypeId = 2,
-                Amount            = 200,
+                Amount            = 1200,
                 PaymentMethodId   = 2,
                 Notes             = "Event",
                 Created           = DateTime.Now,
@@ -186,15 +187,58 @@ public static class SeedData
             },
             new Donations()
             {
-                TransId           = 3,
+                TransId           = 6,
                 Date              = DateTime.Now,
+                AccountNo         = 3,
+                TransactionTypeId = 3,
+                Amount            = 1300,
+                PaymentMethodId   = 3,
+                Notes             = "Membership",
+                Created           = DateTime.Now,
+                Modified          = DateTime.Now,
+                CreatedBy         = "System",
+                ModifiedBy        = "System"
+            },
+            // 2022 SEED DATA
+            new Donations()
+            {
+                TransId           = 1,
+                Date              = new DateTime(2022, 1, 15), // January 15, 2022
+                AccountNo         = 1,
+                TransactionTypeId = 1,
+                Amount            = 100,
+                PaymentMethodId   = 1,
+                Notes             = "Donation",
+                Created           = new DateTime(2022, 1, 15), // January 15, 2022
+                Modified          = new DateTime(2022, 1, 15), // January 15, 2022
+                CreatedBy         = "System",
+                ModifiedBy        = "System"
+                },
+            new Donations()
+            {
+                TransId           = 2,
+                Date              = new DateTime(2022, 6, 20), // June 20, 2022
+                AccountNo         = 2,
+                TransactionTypeId = 2,
+                Amount            = 200,
+                PaymentMethodId   = 2,
+                Notes             = "Event",
+                Created           = new DateTime(2022, 6, 20), // June 20, 2022
+                Modified          = new DateTime(2022, 6, 20), // June 20, 2022
+                CreatedBy         = "System",
+                ModifiedBy        = "System"
+            },
+            new Donations()
+            {
+                TransId           = 3,
+                Date              = new DateTime(2022, 12, 5), // December 5, 2022
                 AccountNo         = 3,
                 TransactionTypeId = 3,
                 Amount            = 300,
                 PaymentMethodId   = 3,
                 Notes             = "Membership",
-                Created           = DateTime.Now,
-                Modified          = DateTime.Now,
+                Created           = new DateTime(2022, 12, 5), // December 5, 2022
+                Modified          = new DateTime(2022, 12, 5), // December 5, 2022
                 CreatedBy         = "System",
                 ModifiedBy        = "System"
             }
