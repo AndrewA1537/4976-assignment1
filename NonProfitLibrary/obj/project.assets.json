@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/pahulsidhu/.nuget/packages/": {}
+    "C:\\Users\\adrag\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj",
+      "projectUniqueName": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj",
       "projectName": "NonProfitLibrary",
-      "projectPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj",
-      "packagesPath": "/Users/pahulsidhu/.nuget/packages/",
-      "outputPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/obj/",
+      "projectPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj",
+      "packagesPath": "C:\\Users\\adrag\\.nuget\\packages\\",
+      "outputPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pahulsidhu/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\adrag\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
