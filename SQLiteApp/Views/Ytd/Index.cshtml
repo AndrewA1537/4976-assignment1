@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Year to Date Report";
+}
+
+<h1>Year to date</h1>
+
+
+<div class="container-fluid">
+    <h4 class="m-4">Donations made to Zenith Non-proft</h4>
+
+    <div class="m-2 p-2">
+        <p>Date : 31 December, 2023 until @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var name in ViewData["Names"] as List<NonProfitLibrary.ContactList>)
+                {
+                    string firstName = name.FirstName;
+                    var dict = ViewData["DonationSums"] as Dictionary<string, float>;
+                    float totalDonation = dict[firstName];
+                    <tr>
+                        <td>@firstName</td>
+                        <td>@totalDonation.ToString("C")</td>
+                    </tr>
+                }
+                <tr>
+                    <td>Total</td>
+                    <td>@string.Format("{0:C}", ViewData["TotalDonation"])</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

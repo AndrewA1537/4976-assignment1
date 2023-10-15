@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj": {}
+    "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj": {}
   },
   "projects": {
-    "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj": {
+    "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj",
+        "projectUniqueName": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj",
         "projectName": "NonProfitLibrary",
-        "projectPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj",
-        "packagesPath": "C:\\Users\\adrag\\.nuget\\packages\\",
-        "outputPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\obj\\",
+        "projectPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj",
+        "packagesPath": "/Users/pahulsidhu/.nuget/packages/",
+        "outputPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adrag\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/pahulsidhu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

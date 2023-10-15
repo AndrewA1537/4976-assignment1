@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Display";
+}
+
+<h1>Tax receipt</h1>
+
+
+<div class="container-fluid">
+    <h4 class="m-4">Donations made to Zenith Non-proft</h4>
+
+    <div class="m-2 p-2">
+        <p>Name : @ViewData["Name"]</p>
+    <p>Date : 31 December, 2023</p>
+    <p>Donations paid during 2023</p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewData["Donations"] as List<NonProfitLibrary.Donations>)
+            {
+                <tr>
+                    
+                    <td>@item.Date.ToString("MMMM dd, yyyy")</td>
+                    <td>@string.Format("{0:C}", item.Amount)</td>
+                </tr>
+            }
+
+            <tr>
+                <td>Total</td>
+                <td>@string.Format("{0:C}", ViewData["Total"])</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

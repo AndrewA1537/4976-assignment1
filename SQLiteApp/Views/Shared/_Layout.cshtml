@@ -53,6 +53,34 @@
                                     asp-action="Index">TransactionType</a>
                             </li>
                         }
+                        @if (User.IsInRole("Admin") || User.IsInRole("Finance"))
+                        {
+                            <li class="nav-item dropdown">
+                                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <button class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Receipts
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-dark">
+                                                <li> <a class="dropdown-item" asp-area="" asp-controller="Tax"
+                                                        asp-action="Index">Tax Receipts</a>
+                                                </li>
+                                                 <li> <a class="dropdown-item" asp-area="" asp-controller="Ytd"
+                                                        asp-action="Index">Year to Date Report</a>
+                                                </li>
+                                                <li> <a class="dropdown-item" asp-area="" asp-controller="YearlyReport"
+                                                        asp-action="Index">Yearly Report</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        }
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -76,7 +104,7 @@
         </div>
         <div>
             <h3>
-                Pahul Sidhu - A00990099
+                Pahul Sidhu - A01310077
             </h3>
         </div>
     </footer>

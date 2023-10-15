@@ -11997,19 +11997,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adrag\\.nuget\\packages\\": {}
+    "/Users/pahulsidhu/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\SQLiteApp\\SQLiteApp.csproj",
+      "projectUniqueName": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/SQLiteApp.csproj",
       "projectName": "SQLiteApp",
-      "projectPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\SQLiteApp\\SQLiteApp.csproj",
-      "packagesPath": "C:\\Users\\adrag\\.nuget\\packages\\",
-      "outputPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\SQLiteApp\\obj\\",
+      "projectPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/SQLiteApp.csproj",
+      "packagesPath": "/Users/pahulsidhu/.nuget/packages/",
+      "outputPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\adrag\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/pahulsidhu/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -12021,8 +12021,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj": {
-              "projectPath": "D:\\cst\\cst-term-4\\comp-4976-microsoft\\assignments\\4976-assignment1\\NonProfitLibrary\\NonProfitLibrary.csproj"
+            "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj": {
+              "projectPath": "/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/NonProfitLibrary/NonProfitLibrary.csproj"
             }
           }
         }
@@ -12097,7 +12097,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

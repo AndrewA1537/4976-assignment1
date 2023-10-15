@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Yearly Report";
+}
+
+<h1>Yearly</h1>
+
+
+<div class="container-fluid">
+    <h4 class="m-4">Donations made to Zenith Non-proft yearly</h4>
+
+    <div class="m-2 p-2">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var year in ViewData["Years"] as List<int>)
+                {
+                    int yearNum = year;
+                    var dict = ViewData["AmountByYear"] as Dictionary<int, float>;
+                    float totalDonation = dict[yearNum];
+                    <tr>
+                        <td>@yearNum</td>
+                        <td>@totalDonation.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

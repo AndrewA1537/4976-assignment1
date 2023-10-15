@@ -9,125 +9,141 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SQLiteApp
 build_property.RootNamespace = SQLiteApp
-build_property.ProjectDir = D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\SQLiteApp\
+build_property.ProjectDir = /Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\cst\cst-term-4\comp-4976-microsoft\assignments\4976-assignment1\SQLiteApp
+build_property.MSBuildProjectDirectory = /Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/ContactList/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdExpc3RcQ3JlYXRlLmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/ContactList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdExpc3QvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/ContactList/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdExpc3RcRGVsZXRlLmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/ContactList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdExpc3QvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/ContactList/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdExpc3RcRGV0YWlscy5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/ContactList/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdExpc3QvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/ContactList/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdExpc3RcRWRpdC5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/ContactList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdExpc3QvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/ContactList/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdExpc3RcSW5kZXguY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/ContactList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdExpc3QvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Donations/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25zXENyZWF0ZS5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Donations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYXRpb25zL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Donations/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25zXERlbGV0ZS5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Donations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYXRpb25zL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Donations/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25zXERldGFpbHMuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Donations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYXRpb25zL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Donations/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25zXEVkaXQuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Donations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYXRpb25zL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Donations/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25zXEluZGV4LmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Donations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9uYXRpb25zL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/PaymentMethod/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudE1ldGhvZFxDcmVhdGUuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/PaymentMethod/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudE1ldGhvZC9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/PaymentMethod/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudE1ldGhvZFxEZWxldGUuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/PaymentMethod/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudE1ldGhvZC9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/PaymentMethod/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudE1ldGhvZFxEZXRhaWxzLmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/PaymentMethod/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudE1ldGhvZC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/PaymentMethod/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudE1ldGhvZFxFZGl0LmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/PaymentMethod/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudE1ldGhvZC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/PaymentMethod/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudE1ldGhvZFxJbmRleC5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/PaymentMethod/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF5bWVudE1ldGhvZC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/TransactionType/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25UeXBlXENyZWF0ZS5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Tax/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGF4L0Rpc3BsYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/TransactionType/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25UeXBlXERlbGV0ZS5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Tax/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGF4L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/TransactionType/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25UeXBlXERldGFpbHMuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/TransactionType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb25UeXBlL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/TransactionType/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25UeXBlXEVkaXQuY3NodG1s
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/TransactionType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb25UeXBlL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/TransactionType/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25UeXBlXEluZGV4LmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/TransactionType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb25UeXBlL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/TransactionType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb25UeXBlL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/TransactionType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY3Rpb25UeXBlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cst/cst-term-4/comp-4976-microsoft/assignments/4976-assignment1/SQLiteApp/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-aiiz8n7pjx
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/YearlyReport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvWWVhcmx5UmVwb3J0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Ytd/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvWXRkL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pahulsidhu/Development/Medhat_Dotnet/4976-assignment1/SQLiteApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ilft5ysn92
